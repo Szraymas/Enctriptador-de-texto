@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Challenge Encriptador de Texto</title>
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <main class="presentacion">
+            <section class="presentacion__contenido">
+                <div> 
+                    <textarea class="presentacion__contenido__caja" id="text" name="textarea" rows="10" cols="30" style="border:none; color:#0A3871;" placeholder="Ingrese el texto aqui"></textarea>
+                </div>
+                <div class="presentacion__contenido__terminos">
+                    <img class="presentacion__contenido__terminos__img" src="./assets/aviso.png">
+                    <p class="presentacion__contenido__terminos__mensaje">Solo letras minúsculas y sin acentos</p>
+                </div>
+                <div class="presentacion__botones"> 
+                    <button onclick="encriptar();" class="presentacion__contenido__boton1">Encriptar</button>
+                    <button onclick="desencriptar();" class="presentacion__contenido__boton2" >Desencriptar</button>
+                </div>
+        
+            </section>
+            <section class="presentacion__contenido__caja__encriptado">
+                
+                <div class="mensaje__encriptado" id="mensaje__encriptado">
+                    <textarea class="mensaje" name="mensaje" id="mensaje" cols="30" rows="10" disabled style="color:black;"></textarea>
+                    <img class="presentacion__imagen" src="./assets/image.png" alt="Imagen donde saldra encriptado el texto" id="imagen">
+                    <h2 class="mensaje__encriptado__titulo" id="titulo__mensaje">Ningún mensaje fue encontrado</h2>
+                    <p class="mensaje__encriptado__parrafo" id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                    
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Desarrollado por Felipe Suárez Másmela</p>
+        </footer>
+    </body>
+    <script src="index.js"></script>
+</html>
